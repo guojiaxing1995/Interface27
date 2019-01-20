@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2872421-db91-45d9-b78a-06a6b454b42d" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/interface_2.7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interface_2.7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_excel/case.xls" beforeDir="false" afterPath="$PROJECT_DIR$/case_excel/case.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_001_myinvoice_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_unittest/Test_001_myinvoice_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_002_myinvoice_invoice_collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_unittest/Test_002_myinvoice_invoice_collect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_003_myinvoice_invoice_share.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_unittest/Test_003_myinvoice_invoice_share.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_004_myinvoice_memo.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_unittest/Test_004_myinvoice_memo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/test.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-03-04 10_06_20result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2018-03-0411_05_10result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/case.xls" beforeDir="false" />
-    </list>
+    <list default="true" id="c2872421-db91-45d9-b78a-06a6b454b42d" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +78,8 @@
       <file leaf-file-name="Test_004_myinvoice_memo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/case_unittest/Test_004_myinvoice_memo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1019">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="237">
+              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="37" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -399,7 +385,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32928476" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -772,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/case_unittest/Test_004_myinvoice_memo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        <state relative-caret-position="237">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="37" selection-end-column="44" />
         </state>
       </provider>
     </entry>

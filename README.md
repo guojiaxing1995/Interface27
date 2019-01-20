@@ -2,7 +2,7 @@
 python接口自动化测试工具
 
 
-项目包含两套接口自动化测试工具，可分别独立运行。一套为requests+unnitest，一套为通过excel表格填写数据驱动测试。
+项目包含两套接口自动化测试工具，可分别独立运行。一套为requests+unnitest，一套为通过填写excel表格测试。
 
 
 ### python+requests+unnitest

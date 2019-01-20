@@ -6,15 +6,13 @@ from config import config
 from util.opreation_gloabal_var import OpreationGloabalVar
 
 class Myinvoice_account(unittest.TestCase):
-    u"""项目名myinvoice-account"""
     def setUp(self):
-        self.url=config.GLOBAL_URL+"/myinvoice-account/"   #测试的接口url
+        self.url=config.GLOBAL_URL+"/XXXXXX/"   #测试的接口url
 
 
     def test_001_login(self):
-        u"""手机号登录"""
         params=config.GLOBAL_USER_INFO
-        url = self.url+'account/app/login'
+        url = self.url+'XXXXXX'
         r = requests.post(url=url, params=params)
         self.assertEqual(r.status_code, 200)
         response = r.json()
@@ -27,12 +25,11 @@ class Myinvoice_account(unittest.TestCase):
         OpreationGloabalVar.set_value('uid',uid)
 
     def test_002_getUserInfo(self):
-        '''获取当前用户的个人资料'''
         datas = {
             "token": OpreationGloabalVar.get_value('token'),
             "uid": OpreationGloabalVar.get_value('uid'),
         }
-        url = self.url + 'account/user/getUserInfo'
+        url = self.url + 'XXXXXX'
         r = requests.post(url=url,data=datas)
         self.assertEqual(r.status_code, 200)
         response = r.json()
@@ -40,7 +37,6 @@ class Myinvoice_account(unittest.TestCase):
         account.get_user_headimgurl(response)
 
     def test_003_updateUserInfo(self):
-        '''修改当前用户个人信息'''
         headers = {
             "Content-Type":"Application/json"
         }
@@ -58,7 +54,7 @@ class Myinvoice_account(unittest.TestCase):
             "uid":OpreationGloabalVar.get_value('uid'),
             "img":img_base64
          }
-        url = self.url + 'account/user/updateUserInfo'
+        url = self.url + 'XXXXXXX'
         r = requests.post(url=url,headers = headers,json=datas,params=params)
         self.assertEqual(r.status_code,200)
         response = r.json()
@@ -67,8 +63,7 @@ class Myinvoice_account(unittest.TestCase):
 
 
     def test_004_downloadImg(self):
-        '''获取下载用户头像'''
-        url = self.url + 'account/user/downloadImg/' + OpreationGloabalVar.get_value('head_img_url')
+        url = self.url + 'XXXXXXX/' + OpreationGloabalVar.get_value('head_img_url')
         r = requests.get(url=url,stream=True)
         f = open('a','wb')
         for chunk in r.iter_content(chunk_size=512):

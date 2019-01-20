@@ -7,13 +7,11 @@ import random
 import re
 
 class myinvoice_invoice_share(unittest.TestCase):
-    '''项目名 myinvoice_invoice  发票批量分享相关'''
 
     def setUp(self):
-        self.url = config.GLOBAL_URL + "/myinvoice-invoice/"  # 测试的接口url
+        self.url = config.GLOBAL_URL + "/XXXXXX/"  # 测试的接口url
 
     def test_001_ShareInvoiceToPhone(self):
-        u"""手机号批量分享"""
         params = {
             "token": globalvar.get_value('token'),
             "random": random.randint(0, 99999999),
@@ -22,7 +20,7 @@ class myinvoice_invoice_share(unittest.TestCase):
             "phone":"15234093915",
             "clientType":"2"
         }
-        url = self.url + 'secured/batchShareInvoice/ShareInvoiceToPhone'
+        url = self.url + 'XXXXXX'
         r = requests.post(url, data=params)
         self.assertEqual(r.status_code, 200)
         response = r.json()
@@ -40,7 +38,7 @@ class myinvoice_invoice_share(unittest.TestCase):
             "trafficIds": globalvar.get_value('trafficIds'),
             "clientType":"2"
         }
-        url = self.url + 'secured/batchShareInvoice/getShareRedisKey'
+        url = self.url + 'XXXXXXXX'
         r = requests.post(url, params=params)
         self.assertEqual(r.status_code, 200)
         response = r.json()
@@ -52,14 +50,13 @@ class myinvoice_invoice_share(unittest.TestCase):
 
 
     def test_003_saveShareInvoice(self):
-        u"""接收二维码批量分享发票"""
         params = {
             "token": globalvar.get_value('token'),
             "saveKey": savekey,
             "clientType":"2",
             "random": random.randint(0, 99999999),
         }
-        url = self.url + 'secured/batchShareInvoice/saveShareInvoice'
+        url = self.url + 'XXXXXXX'
         r = requests.post(url, params=params)
         self.assertEqual(r.status_code, 200)
         print(r.json())
@@ -67,7 +64,6 @@ class myinvoice_invoice_share(unittest.TestCase):
 
 
     def test_004_getBatchShareList(self):
-        u"""获取批量分享历史记录"""
         params = {
             "token": globalvar.get_value('token'),
             "random": random.randint(0, 99999999),
@@ -75,7 +71,7 @@ class myinvoice_invoice_share(unittest.TestCase):
             "limit":"10",
             "clientType":"2"
         }
-        url = self.url + 'secured/batchShareInvoice/getBatchShareList'
+        url = self.url + 'XXXXXX'
         r = requests.post(url, params=params)
         self.assertEqual(r.status_code, 200)
         print(r.json())
@@ -92,7 +88,7 @@ class myinvoice_invoice_share(unittest.TestCase):
             "trafficIds": globalvar.get_value('trafficIds'),
             "clientType":"2"
         }
-        url = self.url + 'secured/batchShareInvoice/getShareRedisKey'
+        url = self.url + 'XXXXXX'
         r = requests.post(url, params=params)
         self.assertEqual(r.status_code, 200)
         print(r.json())
@@ -104,7 +100,7 @@ class myinvoice_invoice_share(unittest.TestCase):
         data = {
             "token": globalvar.get_value('token')
         }
-        url = self.url + 'secured/invoice/getShareAccountForme'
+        url = self.url + 'XXXXX'
         r = requests.post(url=url,data=data)
         self.assertEqual(r.status_code, 200)
         response = r.json()
@@ -112,35 +108,32 @@ class myinvoice_invoice_share(unittest.TestCase):
         print(r.json())
 
     def test_007_shareHistory(self):
-        """分享历史接口"""
         data = {
             "token": globalvar.get_value('token')
         }
-        url = self.url + 'secured/invoice/shareHistory'
+        url = self.url + 'XXXXXXX'
         r = requests.post(url=url, data=data)
         self.assertEqual(r.status_code, 200)
         response = r.json()
         self.assertEqual(response['code'], '0000')
 
     def test_008_shereFromMe(self):
-        """与我分享接口"""
         data = {
             "token": globalvar.get_value('token')
         }
-        url = self.url + 'secured/invoice/shereFromMe'
+        url = self.url + 'XXXXXXX'
         r = requests.post(url=url, data=data)
         self.assertEqual(r.status_code, 200)
         response = r.json()
         self.assertEqual(response['code'], '0000')
 
     def test_009_getShareInvoiceList(self):
-        """获取分享发票接口"""
         data = {
             "token": globalvar.get_value('token'),
             "shareUid":"",
             "type":""
         }
-        url = self.url + 'secured/invoice/getShareInvoiceList'
+        url = self.url + 'XXXXXXXX'
         r = requests.post(url=url, data=data)
         self.assertEqual(r.status_code, 200)
         response = r.json()

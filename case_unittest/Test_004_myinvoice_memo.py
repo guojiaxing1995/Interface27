@@ -6,9 +6,8 @@ from util.opreation_gloabal_var import OpreationGloabalVar as globalvar
 import random
 
 class myinvoice_invoice(unittest.TestCase):
-    u"""项目名  myinvoice-invoice 发票批量设置分类 待办"""
     def setUp(self):
-        self.url=config.GLOBAL_URL+"/myinvoice-memo/"   #测试的接口url
+        self.url=config.GLOBAL_URL+"/XXXXX/"   #测试的接口url
 
 
     def test_001_getTodoLabelList(self):
@@ -19,14 +18,13 @@ class myinvoice_invoice(unittest.TestCase):
       "invoiceIds": globalvar.get_value('invoiceIds'),
       "trafficIds": globalvar.get_value('trafficIds')
 }
-        url = self.url+'invoiceDetail/memorandum/getTodoLabelList'
+        url = self.url+'XXXXX'
         r = requests.post(url, params=params)
 
         self.assertEqual(r.status_code, 200)
         print(r.json())
 
     def test_002_saveBatchTodoLabels(self):
-        u"""批量设置待办"""
         params = {
             "token": globalvar.get_value('token'),
             "random": random.randint(0, 99999999),
@@ -34,18 +32,17 @@ class myinvoice_invoice(unittest.TestCase):
             "invoiceIds": globalvar.get_value('invoiceIds'),
             "trafficIds": globalvar.get_value('trafficIds')
         }
-        url = self.url + 'invoiceDetail/memorandum/saveBatchTodoLabels'
+        url = self.url + 'XXXXX'
         r = requests.post(url, data=params)
 
         self.assertEqual(r.status_code, 200)
         #print(r.json())
 
     def test_003_getLabels(self):
-        u"""获取分类列表"""
         data = {
             "token": globalvar.get_value('token')
         }
-        url = self.url + 'label/getLabels'
+        url = self.url + 'XXXXXX'
         r = requests.post(url, data=data)
         self.assertEqual(r.status_code,200)
         response = r.json()
@@ -53,7 +50,6 @@ class myinvoice_invoice(unittest.TestCase):
         print(response)
 
     def test_004_saveCategoryBatch(self):
-        u"""批量设置分类"""
         params = {
             "token": globalvar.get_value('token'),
             "random": random.randint(0, 99999999),
@@ -61,7 +57,7 @@ class myinvoice_invoice(unittest.TestCase):
             "invoiceIds": globalvar.get_value('invoiceIds'),
             "trafficIds": globalvar.get_value('trafficIds')
         }
-        url = self.url + 'invoiceDetail/memorandum/saveCategoryBatch'
+        url = self.url + 'XXXXXXXXX'
         r = requests.post(url, data=params)
         self.assertEqual(r.status_code, 200)
         response = r.json()

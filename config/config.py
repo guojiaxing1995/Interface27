@@ -1,20 +1,14 @@
 #encoding=utf-8
 
 #研发环境地址
-#GLOBAL_URL='http://apptest.5ifapiao.com'
 #测试环境地址
 GLOBAL_URL='https://'
 #预发布环境地址
-#GLOBAL_URL='https://appyfb.5ifapiao.com'
 #生产环境地址
-#GLOBAL_URL='https://app.my-invoice.cn'
 
-#分享测试地址
+
 GLOBAL_share_URL='https://'
-#分享预发布地址
-#GLOBAL_share_URL='https://newyfb.5ifapiao.com'
-#分享生产地址
-#GLOBAL_share_URL='https://wdfp.5ifapiao.com'
+
 
 #增票列表 卷票\普票\专票\红票\错票
 GLOBAL_INVOICE_LIST = [",,011001700107,00305271,,20170805,452664,",
@@ -27,4 +21,4 @@ GLOBAL_TRAFFIC_LIST = [{"invoice_type": "3","je": "35.00","kprq": "2017-09-15 08
                        {"invoice_type": "2","je": "750.00","kprq": "2019-10-18 20:20:30","name": "huochepiao","starting_station":"shanghai","terminal_station":"beijing","train_number":"g2","train_time": "2020-09-15 08:20:30"}]
 
 #用户信息
-GLOBAL_USER_INFO = {"account":18550903916,"password": "qwe123"}
+GLOBAL_USER_INFO = {"account":"XXX","password": "qwe123"}

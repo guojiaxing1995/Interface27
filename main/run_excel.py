@@ -40,7 +40,7 @@ class Run:
 
         #将测试结果发送报告
         opreaemail = OpreationEmail()
-        receivers = ['3398715569@qq.com', '15234093915@163.com']
+        receivers = ['33969@qq.com', 'X@163.com']
         subject = '自动化测试报告'
         content = '用例总数'+str(lines-2)+'条,执行'+str(len(self.case_run_list))+'条,通过'+str(len(self.pass_list))+\
                   '条,失败'+str(len(self.fail_list))+'条'+'\n'+'通过率为 '+str(len(self.pass_list)*100/len(self.case_run_list))+'%'

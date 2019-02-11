@@ -5,10 +5,10 @@ import MySQLdb.cursors
 class OperationMysql:
     def __init__(self,db):
         self.conn = MySQLdb.connect(
-            host='192.168.157.128',
+            host='192.168.XXX.128',
             port=3306,
             user='root',
-            passwd='gjx196868',
+            passwd='',
             charset='utf8',
             db=db,
             #设置查询后每条记录的结果已字典表示，默认已列表表示

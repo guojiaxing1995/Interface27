@@ -10,7 +10,7 @@ class Myinvoice_account(unittest.TestCase):
         self.url=config.GLOBAL_URL+"/XXXXXX/"   #测试的接口url
 
 
-    def test_001_login(self):
+    def test_001_(self):
         params=config.GLOBAL_USER_INFO
         url = self.url+'XXXXXX'
         r = requests.post(url=url, params=params)
@@ -24,7 +24,7 @@ class Myinvoice_account(unittest.TestCase):
         OpreationGloabalVar.set_value('token',token)
         OpreationGloabalVar.set_value('uid',uid)
 
-    def test_002_getUserInfo(self):
+    def test_002_(self):
         datas = {
             "token": OpreationGloabalVar.get_value('token'),
             "uid": OpreationGloabalVar.get_value('uid'),
@@ -36,7 +36,7 @@ class Myinvoice_account(unittest.TestCase):
         self.assertEqual(response['code'],'0000')
         account.get_user_headimgurl(response)
 
-    def test_003_updateUserInfo(self):
+    def test_003_(self):
         headers = {
             "Content-Type":"Application/json"
         }
@@ -45,14 +45,14 @@ class Myinvoice_account(unittest.TestCase):
         }
         img_base64 = Account.get_img_base64()
         datas = {
-            "sex" : "1",
-            "nick_name":Account.Unicode(),
-            "city" : Account.Unicode(),
-            "country":"中国",
-            "province":"北京",
-            "lable": Account.GBK2312(),
-            "uid":OpreationGloabalVar.get_value('uid'),
-            "img":img_base64
+            "" : "1",
+            "":Account.Unicode(),
+            "" : Account.Unicode(),
+            "":"中国",
+            "":"北京",
+            "": Account.GBK2312(),
+            "":OpreationGloabalVar.get_value('uid'),
+            "":img_base64
          }
         url = self.url + 'XXXXXXX'
         r = requests.post(url=url,headers = headers,json=datas,params=params)

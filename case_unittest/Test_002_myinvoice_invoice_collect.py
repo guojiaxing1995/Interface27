@@ -3,7 +3,6 @@ import requests
 import unittest
 from config import config
 from util.opreation_gloabal_var import OpreationGloabalVar
-from business.InvoiceListAnalyze import InvoiceListAnalyze
 
 class myinvoice_invoice_collect(unittest.TestCase):
 
@@ -15,10 +14,8 @@ class myinvoice_invoice_collect(unittest.TestCase):
             params={
         "flag": "1",
          "token": OpreationGloabalVar.get_value('token'),
-        "infoStr": invoice,
         #"infoStr": {",,031001600411,12357700,,,,"},
         "uuid":"",
-        "clientType":"2"
                     }
             url = self.url+'XXXXXXXXX'
             r = requests.post(url, params=params)
@@ -30,7 +27,6 @@ class myinvoice_invoice_collect(unittest.TestCase):
     def test_002_invoice_ocr_trafficInvoiceCollection(self):
         for traffic in config.GLOBAL_TRAFFIC_LIST:
             params = {
-                "flag": "1",
                 "token": OpreationGloabalVar.get_value('token')
                 }
             headers = {
@@ -49,23 +45,16 @@ class myinvoice_invoice_collect(unittest.TestCase):
     def test_003_invoice_getInvoiceList(self):
         params = {
             "token": OpreationGloabalVar.get_value('token'),
-            "cxrq":"",
-            "fplb":"",
-            "checkStatus": "",
-            "todo":"",
-            "xfmc":"",
-            "userSettingType":""
+
             }
         headers = {
-            "version":"v1.0.7"
+
         }
         url = self.url + 'XXXXXXX'
         r = requests.post(url, data=params,headers = headers)
         self.assertEqual(r.status_code, 200)
-        #通过解析发票列表获取增票id字符串和交通票id字符串
         invoice_Analyze = InvoiceListAnalyze(r.json())
         invoiceIds,trafficIds = invoice_Analyze.get_invoiceids_string()
-        #将得到的字符串设为全局变量
         OpreationGloabalVar.set_value('invoiceIds',invoiceIds)
         OpreationGloabalVar.set_value('trafficIds',trafficIds)
 

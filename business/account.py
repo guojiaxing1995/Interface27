@@ -49,7 +49,7 @@ class Account():
     @staticmethod
     def get_img_base64():
         #图片转base64
-        f = open(r'method/eva.png','rb')
+        f = open(r'method/e.png','rb')
         base64_str = base64.b64encode(f.read())
         f.close()
         base64_str = base64_str.decode('utf-8')

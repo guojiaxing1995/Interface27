@@ -11,7 +11,7 @@ class Account():
         self.uid = ''
 
     def get_logininfor(self):
-        '''传入登录返回数据,获得token uid 等数据'''
+        '''传入登录返回数据,获得等数据'''
         getdata = self.loginresponse['data']
         self.token = getdata['token']
         self.uid = getdata['uid']
@@ -19,7 +19,7 @@ class Account():
         return self.token,self.uid
 
     def get_user_headimgurl(self,userinforresponse):
-        '''传入当前用户信息返会数据,获取head_img_url,head_img_url是获取用户头像接口参数'''
+        '''传入当前用户信息返会数据,获取l,l是获取用户头像接口参数'''
         self.head_img_url = userinforresponse['data']['userInfo']['head_img_url']
 
         return self.head_img_url

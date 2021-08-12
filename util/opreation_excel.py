@@ -1,48 +1,40 @@
-#coding:utf-8
-import xlrd
-from xlutils.copy import copy
+from openpyxl import load_workbook
+
 
 class OperationExcel:
-    def __init__(self,file_name=None):
+    def __init__(self, file_name=None):
+        self.table = None
         if file_name:
             self.file_name = file_name
         else:
-            self.file_name = '../case_excel/case.xls'
-        self.workbook = self.get_workbook(self.file_name)
+            self.file_name = '../case_excel/case.xlsx'
+        # self.workbook = xlrd.open_workbook(self.file_name)
+        self.workbook = load_workbook(self.file_name)
 
-    def get_workbook(self,file_name):
-        workbook = xlrd.open_workbook(file_name)
-        return workbook
-
-    def get_table(self,workbook,sheet_name=None,sheet_id=0):
-        table = workbook.sheets()[sheet_id]
+    def get_table(self, sheet_name=None):
+        self.table = self.workbook.active
         if sheet_name:
-            table = workbook.sheet_by_name(sheet_name)
-        return table
+            self.table = self.workbook[sheet_name]
 
-    def get_rows(self,table):
-        rows = table.nrows
+    def get_rows(self):
+        rows = self.table.max_row
         return rows
 
-    def get_cols(self,table):
-        cols = table.ncols
+    def get_cols(self):
+        cols = self.table.max_column
         return cols
 
-    def get_cell_value(self,table,x,y):
-        cell_value = table.cell_value(x, y)
+    def get_cell_value(self, x, y):
+        cell_value = self.table.cell(x, y).value
         return cell_value
 
-    def write_execel(self,workbook,sheetid,row,col,value):
-        workbook_copy = copy(workbook)
-        sheet_write = workbook_copy.get_sheet(sheetid)
-        sheet_write.write(row,col,value)
-        workbook_copy.save(self.file_name)
+    def write_execel(self, row, col, value, font=None):
+        self.table.cell(row, col, value).font = font
+        self.workbook.save(self.file_name)
+
 
 if __name__ == '__main__':
-    excel = OperationExcel('../case_excel/case.xls')
-    table = excel.get_table(excel.workbook,sheet_name='case1',sheet_id=0)
-    # rows = excel.get_rows(table)
-    #excel.write_execel(6,2,'pass')
-    #print(rows)
-
-    print(excel.get_cell_value(table,0,11))
+    excel = OperationExcel('../case_excel/case.xlsx')
+    excel.get_table(sheet_name='case1')
+    excel.write_execel(15, 15, '返回成功！')
+    print(excel.get_cell_value(1, 1))

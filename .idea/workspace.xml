@@ -19,30 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2872421-db91-45d9-b78a-06a6b454b42d" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/case_excel/case.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_unittest/Test_001_parking_lot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/interface_2.7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interface_2.7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mock_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mock_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/runmethod.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/runmethod.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/account.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/deal_method.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_excel/case.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_excel/excel_column.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_excel/excel_column.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_excel/get_execel_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_excel/get_execel_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_001_xxxx_account.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_unittest/Test_002_xxxxx_ct.py" beforeDir="false" afterPath="$PROJECT_DIR$/case_unittest/Test_002_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/execute_one_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/execute_one_case.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/run_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/run_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/run_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/run_unittest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/opreation_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/opreation_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/opreation_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/opreation_excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/opreation_gloabal_var.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/opreation_gloabal_var.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/opreation_mysql.py" beforeDir="false" />
-    </list>
+    <list default="true" id="c2872421-db91-45d9-b78a-06a6b454b42d" name="默认的" comment="1.python2 -&gt; python3 &#10;2.部分代码修改" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -237,8 +215,23 @@
       <workItem from="1628765257727" duration="101000" />
       <workItem from="1628766046255" duration="58000" />
       <workItem from="1628766118620" duration="694000" />
-      <workItem from="1628766834146" duration="1447000" />
+      <workItem from="1628766834146" duration="1880000" />
     </task>
+    <task id="LOCAL-00001" summary="1.python2 -&gt; python3 &#10;2.部分代码修改">
+      <created>1628768641927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628768641927</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.python2 -&gt; python3 &#10;2.部分代码修改">
+      <created>1628768674623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628768674623</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +248,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.python2 -&gt; python3 &#10;2.部分代码修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.python2 -&gt; python3 &#10;2.部分代码修改" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="279" key="#Project_Settings" timestamp="1628767100854">
@@ -273,10 +271,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#检查/0.0.1920.1040@0.0.1920.1040" timestamp="1628236337405" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1628767824460">
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1628768726231">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1628767824460" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1628768726231" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1628236361760">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +304,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="113" y="88" width="1350" height="638" key="ShowDiffWithBranchDialog/0.0.1536.824@0.0.1536.824" timestamp="1628767824460" />
-    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628767668950">
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628768410811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1628767668950" />
+    <state x="563" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1628768410811" />
     <state x="661" y="223" width="597" height="594" key="find.popup" timestamp="1628667692549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

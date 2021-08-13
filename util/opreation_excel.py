@@ -8,7 +8,6 @@ class OperationExcel:
             self.file_name = file_name
         else:
             self.file_name = '../case_excel/case.xlsx'
-        # self.workbook = xlrd.open_workbook(self.file_name)
         self.workbook = load_workbook(self.file_name)
 
     def get_table(self, sheet_name=None):

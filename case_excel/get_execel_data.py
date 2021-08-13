@@ -1,4 +1,3 @@
-import xlrd
 from openpyxl.styles import Font
 
 from case_excel.excel_column import excel_column
